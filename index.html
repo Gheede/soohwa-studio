@@ -2,207 +2,174 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>수화스튜디오</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>수화 스튜디오</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Playfair+Display:wght@600&display=swap');
 
     body {
       margin: 0;
       padding: 0;
-      background-color: #111;
-      color: #e0e0e0;
+      background-color: #fff;
+      color: #111;
       font-family: 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
+      line-height: 1.8;
     }
 
     header {
-      background: #000;
-      padding: 2rem;
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-    }
-
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      margin: 0;
-      color: #fff;
-      letter-spacing: 2px;
-    }
-
-    nav {
-      background-color: #1a1a1a;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      font-family: 'Noto Sans KR', sans-serif;
-      padding: 1rem;
-      color: #bbb;
-      text-decoration: none;
-      font-weight: 400;
-    }
-
-    nav a:hover {
-      color: #fff;
-      border-bottom: 2px solid #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
     section {
-      padding: 2rem;
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
-      background-color: #1a1a1a;
-      margin-top: 1rem;
-      border-radius: 10px;
     }
 
     h2 {
-      font-family: 'Montserrat', sans-serif;
       font-size: 1.8rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #fff;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #000;
+      display: inline-block;
+      padding-bottom: 5px;
     }
 
-    p, li {
-      font-size: 0.95rem;
-      font-weight: 300;
-    }
-
-    .instructor-img {
-      display: block;
-      margin: 1rem auto;
-      max-width: 200px;
-      border-radius: 10px;
-    }
-
-    .contact-info {
-      margin-top: 1rem;
-      line-height: 1.6;
-    }
-
-    form {
+    .instructor {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
-    input, textarea {
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      font-size: 1rem;
-      background: #222;
-      color: #eee;
-      border: 1px solid #444;
+    .instructor img {
+      width: 220px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
-    button {
-      padding: 0.7rem;
-      background-color: #fff;
-      color: #111;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
+    .instructor h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
     }
 
-    button:hover {
-      background-color: #ccc;
+    .info-block {
+      margin-bottom: 25px;
+    }
+
+    .info-block strong {
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
     }
 
     footer {
-      background-color: #1a1a1a;
-      color: #777;
+      background: #f5f5f5;
+      padding: 20px;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .instructor {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+      }
+
+      .instructor img {
+        width: 250px;
+      }
+
+      .info-block {
+        flex: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>수화스튜디오</h1>
-  </header>
 
-  <nav>
-    <a href="#intro">학원 소개</a>
-    <a href="#curriculum">커리큘럼</a>
-    <a href="#instructor">강사 소개</a>
-    <a href="#contact">문의</a>
-  </nav>
+  <header>수화 스튜디오</header>
 
-  <section id="intro">
-    <h2>학원 소개</h2>
-    <p>
-      수화스튜디오는 감성과 실력을 균형 있게 갖춘 아티스트를 양성하는 실용음악 전문 교육 공간입니다. 
-      단순한 트레이닝을 넘어, 자신만의 음악 색깔을 찾아가며 무대 위에서 스스로를 표현할 수 있는 능력을 키우는 것을 목표로 합니다.
-      <br><br>
-      보컬 트레이닝, 작사·작곡, 음반 제작까지 모든 커리큘럼은 현직 뮤지션이자 실전 경험이 풍부한 전문 강사가 직접 지도합니다. 
-      1:1 맞춤 피드백과 실전 중심의 레슨, 그리고 최신 음악 산업 트렌드를 반영한 콘텐츠를 통해, 
-      입시와 오디션, 그리고 실제 앨범 활동까지 전방위적인 음악 경로를 안내합니다.
-      <br><br>
-      당신의 이야기를 음악으로 표현하고 싶다면, 수화스튜디오에서 시작해보세요.
-      음악을 사랑하는 모든 이들에게 열려 있습니다.
-    </p>
-  </section>
-
-  <section id="curriculum">
-    <h2>커리큘럼</h2>
-    <ul>
-      <li>보컬 트레이닝: 기초 발성부터 고급 테크닉까지 체계적 훈련</li>
-      <li>작사·작곡: 감성 언어와 음악적 구조를 아우르는 창작 프로그램</li>
-      <li>음반제작: 실습 중심의 DAW 활용 및 음원 발매 지원</li>
-    </ul>
-  </section>
-
-  <section id="instructor">
+  <section>
     <h2>강사 소개</h2>
-    <img src="https://i.imgur.com/LYQcdHc.jpeg" alt="강사 이미지" class="instructor-img" />
-    <p>
-      동아방송예술대학 실용음악과 졸업 (3년전문학사)<br>
-      글로벌사이버대학교 방송연예학 학사졸업 (편입 4년 학사)<br>
-      경찰대학 국립경찰교향악단 보컬 대원 전역<br>
-      실기교사 교원자격증(음악) 취득 (교육부)<br>
-      아현산업정보학교 Vocal 수료<br>
-      어울림음악회 세종문화회관 공연<br>
-      Daw "Logic", "Cubase" 사용<br>
-      KOICA 국제협력단 초청공연<br>
-      아티스트 "수화" 앨범활동 (작사, 작곡, 편곡)<br>
-      가수 이루 '잊으려고' 가이드 녹음<br>
-      가수 가호 "Lost Way" 코러스 녹음<br>
-      가수 소찬휘 콘서트 코러스 세션<br>
-      우바울 "Some Way" 외 다수 작사, 작곡<br>
-      2013 제1회 한양대학교 applied music festival 금상 수상<br>
-      前 써니뮤직 레이블 작곡가 & 아티스트<br>
-      前 HIPPO MUSIC 레이블 대표 및 소속 아티스트<br><br>
-      <strong>- 입시 실적 -</strong><br>
-      동아방송예술대학, 호원대, 경희대, 명지전문대, 백석예술대학, 경기대, 단국대 등 수석 포함 합격생 다수 배출<br><br>
-      <strong>- 오디션 실적 -</strong><br>
-      SM, 큐브 등 메이저 기획사 연습생 다수 배출<br><br>
-      <strong>- 출강 이력 -</strong><br>
-      잼 실용음악학원, 온뮤직 보컬&댄스, 수화스튜디오, 기타 다수 지역 학원 출강 경력 보유
-    </p>
-  </section>
+    <div class="instructor">
+      <img src="https://i.imgur.com/LYQcdHc.jpeg" alt="강사 사진" />
+      <div class="info-block">
+        <h3>김윤수 강사</h3>
+        <p><strong>학력 및 자격</strong></p>
+        <ul>
+          <li>동아방송예술대학 실용음악과 졸업 (3년 전문학사)</li>
+          <li>글로벌사이버대학교 방송연예학 편입학 및 학사 졸업</li>
+          <li>경찰대학 국립경찰교향악단 보컬 대원 전역</li>
+          <li>실기교사 교원자격증(음악) 취득</li>
+          <li>아현산업정보학교 Vocal 수료</li>
+        </ul>
 
-  <section id="contact">
-    <h2>문의</h2>
-    <div class="contact-info">
-      주소: 서울시 은평구 376-17<br>
-      전화번호: 010-9971-0414<br>
-      이메일: spelling7@naver.com
+        <p><strong>공연/활동</strong></p>
+        <ul>
+          <li>어울림음악회 세종문화회관 공연</li>
+          <li>KOICA 국제협력단 초청공연</li>
+          <li>가수 이루 ‘잊으려고’ 가이드 녹음</li>
+          <li>가수 가호 ‘Lost Way’ 코러스 녹음</li>
+          <li>소찬휘 콘서트 코러스 세션</li>
+        </ul>
+
+        <p><strong>음악 제작 및 작사/작곡</strong></p>
+        <ul>
+          <li>아티스트 "수화" 앨범 활동 (작사, 작곡, 편곡)</li>
+          <li>우바울 "Some Way", "소망", "출애굽기17장", "요한복음21장", "시편27편"</li>
+          <li>한월 "마음의 없는 소리" 작곡</li>
+        </ul>
+
+        <p><strong>음반 활동</strong></p>
+        <ul>
+          <li>수화 - 그때, 너 / 아무것도 아니다 / 기록 / 의자 / 잔상 / 비밀</li>
+          <li>수화 - 빈자리 / 사랑 그 아픈 이름 / 나지막한 목소리가 귓가에 들려오는 밤이면</li>
+          <li>수화 - 다른 마음 / 몰라요 / 이제서야 / 점 / 대화</li>
+        </ul>
+
+        <p><strong>수상 및 레이블 이력</strong></p>
+        <ul>
+          <li>한양대학교 Applied Music Festival 금상 (2013)</li>
+          <li>前 써니뮤직 레이블 소속 작곡가</li>
+          <li>前 HIPPO MUSIC 대표 및 아티스트 활동</li>
+        </ul>
+
+        <p><strong>입시 및 오디션 합격생 배출</strong></p>
+        <ul>
+          <li>동아방송예술대학, 호원대, 경희대, 단국대 외 다수</li>
+          <li>SM, 큐브 등 대형기획사 연습생 합격 다수</li>
+        </ul>
+
+        <p><strong>출강 이력</strong></p>
+        <ul>
+          <li>現 수화스튜디오, 잼 실용음악학원, 온뮤직 보컬&댄스</li>
+          <li>前 부천경희, 주니퍼, 어웨이크, 서강, 뮤즈, 퓨즈 등 출강</li>
+        </ul>
+
+        <p><strong>사용 툴</strong></p>
+        <ul>
+          <li>Logic Pro, Cubase 등 음악 제작 프로그램 활용</li>
+        </ul>
+      </div>
     </div>
-    <form>
-      <input type="text" placeholder="이름" required />
-      <input type="email" placeholder="이메일" required />
-      <textarea rows="5" placeholder="문의 내용" required></textarea>
-      <button type="submit">보내기</button>
-    </form>
   </section>
 
   <footer>
-    ⓒ 2025 수화스튜디오. All Rights Reserved.
+    서울시 은평구 376-17 | 전화: 010-9971-0414 | 이메일: spelling7@naver.com
   </footer>
+
 </body>
 </html>
