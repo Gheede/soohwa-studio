@@ -42,6 +42,19 @@
       padding: 20px;
       border-radius: 10px;
     }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #111;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -65,7 +78,7 @@
   <nav>
     <a href="#about">소개</a>
     <a href="#curriculum">커리큘럼</a>
-    <a href="#contact">문의</a>
+    <a href="#inquiry">문의</a>
   </nav>
 
   <section id="about">
@@ -82,12 +95,22 @@
     </ul>
   </section>
 
+  <section id="inquiry">
+    <h2>수강 문의</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="이름" required>
+      <input type="text" name="phone" placeholder="연락처" required>
+      <textarea name="message" placeholder="문의 내용을 입력하세요" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
+
   <section id="contact">
     <h2>문의 및 오시는 길</h2>
     <div class="contact">
-      <p><strong>이메일:</strong> soohwa.studio@email.com</p>
+      <p><strong>이메일:</strong> spelling7@naver.com</p>
       <p><strong>전화:</strong> 010-9971-0414</p>
-      <p><strong>주소:</strong> 서울시 은평구 응암동 376-17</p>
+      <p><strong>주소:</strong> 서울시 은평구 376-17</p>
       <p><strong>운영시간:</strong> 월~토 오전 10시 ~ 오후 8시</p>
     </div>
   </section>
