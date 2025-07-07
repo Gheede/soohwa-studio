@@ -6,64 +6,100 @@
   <title>수화스튜디오</title>
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Noto Sans KR', sans-serif;
       background-color: #fff;
       color: #222;
+      scroll-behavior: smooth;
     }
     header {
-      background-color: #000;
+      background: linear-gradient(90deg, #000, #333);
       color: #fff;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       text-align: center;
       font-family: 'Do Hyeon', sans-serif;
-      font-size: 1.8rem;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     nav {
       background-color: #111;
-      padding: 0.5rem;
+      padding: 0.8rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
     nav a {
       color: #fff;
-      margin: 0 1rem;
+      margin: 0 1.2rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      text-decoration: underline;
+      color: #ffcc00;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px #000;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
-      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+    section {
+      margin-bottom: 3rem;
     }
     h2 {
       font-family: 'Do Hyeon', sans-serif;
       font-size: 2rem;
       margin-bottom: 1rem;
+      border-bottom: 2px solid #222;
+      display: inline-block;
+      padding-bottom: 0.3rem;
     }
-    img.profile {
-      max-width: 200px;
+    .profile {
+      max-width: 220px;
       display: block;
       margin: 1rem auto;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    footer {
-      background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-    .section {
-      margin-top: 3rem;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
     }
     ul {
       padding-left: 1.2rem;
+      line-height: 1.7;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #333;
+    }
+    a:hover {
+      color: #000;
+    }
+    .highlight {
+      background: #ffcc00;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -73,57 +109,51 @@
     <a href="#intro">학원 소개</a>
     <a href="#instructor">강사 소개</a>
     <a href="#contact">문의하기</a>
-  </nav>  <div class="container">
-    <section id="intro" class="section">
+  </nav>  <div class="hero">
+    당신의 음악, 지금 시작하세요
+  </div>  <div class="container">
+    <section id="intro">
       <h2>학원 소개</h2>
       <p>
-        수화스튜디오는 보컬 트레이닝, 작사·작곡, 음반 제작을 전문으로 하는 실용음악 교육 공간입니다.<br>
-        전문적인 커리큘럼과 풍부한 현장 경험을 갖춘 강사진이 1:1 맞춤 교육을 제공합니다.<br>
-        단순한 실력 향상을 넘어 실전 무대와 오디션까지 연결되는 실질적인 준비를 함께합니다.
+        <span class="highlight">수화스튜디오</span>는 감성적인 표현력과 실전 중심 실력을 겸비한 아티스트를 양성합니다.<br>
+        보컬 트레이닝부터 작사·작곡, 음반 제작까지 아우르는 통합 커리큘럼을 통해<br>
+        수강생이 자신의 색깔을 찾아내고, 음악 산업 속에서 당당히 설 수 있도록 지도합니다.
       </p>
-    </section><section id="instructor" class="section">
+    </section><section id="instructor">
   <h2>강사 소개</h2>
   <img src="https://i.imgur.com/LYQcdHc.jpeg" alt="강사 사진" class="profile">
-  <p><strong>김윤수</strong></p>
+  <p><strong>김윤수 강사</strong></p>
   <ul>
-    <li>동아방송예술대학교 실용음악과 졸업 (3년제 전문학사)</li>
-    <li>글로벌사이버대학교 방송연예학 학사 졸업 (편입 4년 학사)</li>
-    <li>경찰대학 국립경찰교향악단 보컬 대원 전역</li>
+    <li>동아방송예술대학 실용음악과 졸업</li>
+    <li>글로벌사이버대학교 방송연예학 학사</li>
+    <li>국립경찰교향악단 보컬 대원 전역</li>
     <li>실기교사 교원자격증(음악) 취득</li>
-    <li>아현산업정보학교 Vocal 수료</li>
-    <li>어울림음악회 세종문화회관 공연</li>
-    <li>KOICA 국제협력단 초청 공연</li>
-    <li>가수 이루 '잊으려고' 가이드 녹음</li>
-    <li>가수 가호 'Lost Way' 코러스 녹음</li>
-    <li>가수 소찬휘 콘서트 코러스 세션</li>
-    <li>우바울 작사·작곡: Some Way, 소망, 출애굽기17장, 요한복음21장, 시편27편</li>
-    <li>한월 '마음의 없는소리' 작곡</li>
-    <li>제1회 한양대 College of Applied Music Festival 금상 수상</li>
-    <li>前 써니뮤직 작곡가 & 아티스트</li>
-    <li>前 HIPPO MUSIC 대표 및 아티스트</li>
-    <li><strong>입시 합격생 다수 배출:</strong> 동아방송예술대학, 호원대, 경희대, 백석예술대 등</li>
-    <li><strong>오디션:</strong> SM, 큐브 등 연습생 다수 합격</li>
-    <li><strong>출강:</strong> 잼실용음악학원, 온뮤직, 수화스튜디오 외 다수</li>
+    <li>SM, 큐브 등 연습생 배출 / 주요 음대 입시 합격생 다수</li>
+    <li>수화 아티스트로 다수 음원 발매 (빈자리, 잔상, 대화 등)</li>
   </ul>
 
   <h3 style="margin-top:2rem">음반 활동</h3>
   <ul>
-    <li>(2018) Digital Single "그때, 너"</li>
-    <li>(2020) "아무것도 아니다", "기록", "의자", "잔상", "비밀"</li>
-    <li>(2021) "빈자리", "사랑 그 아픈 이름", "나지막한 목소리가...", "다른 마음", "몰라요", "이제서야", "점"</li>
-    <li>(2023) "대화"</li>
+    <li>2018 - 그때, 너</li>
+    <li>2020 - 아무것도 아니다, 기록, 의자, 잔상, 비밀</li>
+    <li>2021 - 빈자리, 사랑 그 아픈 이름, 나지막한 목소리가..., 다른 마음, 몰라요, 이제서야, 점</li>
+    <li>2023 - 대화</li>
   </ul>
 </section>
 
-<section id="contact" class="section">
+<section id="contact">
   <h2>문의하기</h2>
   <p><strong>주소:</strong> 서울시 은평구 376-17</p>
   <p><strong>전화:</strong> 010-9971-0414</p>
   <p><strong>이메일:</strong> <a href="mailto:spelling7@naver.com">spelling7@naver.com</a></p>
+  <p>
+    수강 문의나 음원 제작 의뢰는 이메일 또는 전화로 언제든지 연락 주세요.<br>
+    빠르게 회신드리겠습니다.
+  </p>
 </section>
 
   </div>  <footer>
-    &copy; 2025 수화스튜디오. All rights reserved.
+    &copy; 2025 수화스튜디오 | Designed with passion for real artists 🎵
   </footer>
 </body>
 </html>
