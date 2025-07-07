@@ -1,130 +1,98 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!DOCTYPE html><html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>가사소개 - 수화스티우디오</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>수화스튜디오</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .instructor-profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .instructor-profile img {
-      width: 200px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
-    .instructor-details {
-      white-space: pre-line;
-      line-height: 1.6;
-    }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+    header { background-color: #222; color: #fff; padding: 1rem; text-align: center; font-size: 1.5rem; }
+    nav { background-color: #444; display: flex; justify-content: center; }
+    nav a { color: #fff; padding: 1rem; text-decoration: none; }
+    nav a:hover { background-color: #666; }
+    section { padding: 2rem; max-width: 800px; margin: auto; background-color: #fff; margin-top: 1rem; border-radius: 10px; }
+    h2 { color: #333; text-align: center; }
+    .instructor-img { display: block; margin: 1rem auto; max-width: 200px; border-radius: 10px; }
+    .contact-info { margin-top: 1rem; line-height: 1.6; }
+    form { display: flex; flex-direction: column; }
+    input, textarea { margin-bottom: 1rem; padding: 0.5rem; font-size: 1rem; }
+    button { padding: 0.7rem; background-color: #333; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #555; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>가사 소개</h1>
-    <div class="instructor-profile">
-      <img src="https://i.imgur.com/HqPa5TO.jpg" alt="김윤수 가사">
-      <div class="instructor-details">
-        동아방송예술대학 실용음악과 조망 (3년전문학사)
-
-        그램벌사이버대학교 방송연예학 학사부전 과정 조망 (4년 학사)
-
-        경찰대학 국립경찰교환아크단 보컬 대원 전역
-
-        실기교사 교원자격증(음악) 취득 (uad6d가고용)
-
-        아현사부정보학교 Vocal 수로
-
-        어울림음악회 세종문화회관 공연
-
-        Daw "Logic", "Cubase" 사용
-
-        KOICA 국제협력단 초창공연
-
-        아티스트 "수화" 앨마허드 (작사, 작곡, 편곡)
-
-        가수 이루 '잊으려고' 가이드 녹음
-
-        가수 가호 'Lost Way' 코러스 녹음
-
-        가수 소찬휘 컨서트 코러스 세션
-
-        우바울 각각 작사·작곡: Some Way, 소망, 출애욱금17장, 요한보군21장, 시평27편
-
-        한월 '마음의 없는소리' 작곡
-
-        2013 제1회 한양대학교 college of applied music festival 금상 수상
-
-        전 써니무직 레이블 작곡가 & 아티스트 소속
-
-        전 HIPPO MUSIC 레이블 대표 및 소속 아티스트
-
-
-        - 입시 -
-
-        Vocal + Singer-Songwrite + K-POP 학생 향상 배출
-        동아방송예술대학, 호원대학교, 경희대학교,
-        명지전문대, 백석예술대학, 정화예술대, 여주대, 국제예술대, 경기대, 단국대 등 실용음악과 학생 대병 배출 (상위권 수적 포함)
-
-        - 오디션 -
-
-        SM, 퀴브 등 여부사 연습생 향상
-
-        - 출강 -
-
-        (現) 짌 실용음악학원 (現 홍대 , 前 사당)
-        (現) 온무직 보커&데스 실용음악학원 (인천)
-        (現) 수화스티우디오 (산골)
-        (前) 부천경희실용음악학원 (부천)
-        (前) 어웨이크 실용음악학원 (김포)
-        (前) 주니퍼실용음악학원 (광명)
-        (前) 서강실용음악학원 (인천)
-        (前) Ô) \xd4ed즈실용음악학원 (한양대)
-        (前) 뮤즈 실용음악학원 (대전)
-
-        - Album -
-
-        ((2018))
-        Digital Single 수화 "그때,너"
-
-        ((2020))
-        Digital Single 수화 "아무것도 아니다"
-        Digital Single 수화 "기록"
-        Digital Single 수화 "의자"
-        Digital Single 수화 "잔상"
-        Digital Single 수화 "비밀"
-
-        ((2021))
-        Digital Single 수화 "빈자리"
-        Digital Single 수화 "사랑 그 아풍 이름"
-        Digital Single 수화 "다른 마음"
-        Digital Single 수화 "모르요"
-        Digital Single 수화 "이제서야"
-        Digital Single 수화 "점"
-
-        ((2023))
-        Digital Single 수화 "대화"
-      </div>
+  <header>수화스튜디오</header>
+  <nav>
+    <a href="#intro">학원 소개</a>
+    <a href="#curriculum">커리큘럼</a>
+    <a href="#instructor">강사 소개</a>
+    <a href="#contact">문의</a>
+  </nav>  <section id="intro">
+    <h2>학원 소개</h2>
+    <p>수화스튜디오는 보컬 트레이닝, 작사·작곡, 음반제작을 전문으로 하는 실용음악 학원입니다. 실력과 감성을 모두 갖춘 아티스트 양성을 목표로 합니다.</p>
+  </section>  <section id="curriculum">
+    <h2>커리큘럼</h2>
+    <ul>
+      <li>보컬 트레이닝: 기초 발성부터 고급 테크닉까지</li>
+      <li>작사·작곡: 이론과 실습을 통한 창작 훈련</li>
+      <li>음반제작: 실습 위주의 음원 제작 수업</li>
+    </ul>
+  </section>  <section id="instructor">
+    <h2>강사 소개</h2>
+    <img src="https://i.imgur.com/your_image_link.jpg" alt="강사 이미지" class="instructor-img" />
+    <p>
+      동아방송예술대학 실용음악과 졸업 (3년전문학사)<br>
+      글로벌사이버대학교 방송연예학 학사졸업 (편입 4년 학사)<br>
+      경찰대학 국립경찰교향악단 보컬 대원 전역<br>
+      실기교사 교원자격증(음악) 취득 (교육부)<br>
+      아현산업정보학교 Vocal 수료<br>
+      어울림음악회 세종문화회관 공연<br>
+      Daw "Logic" , "Cubase" 사용<br>
+      KOICA 국제협력단 초청공연<br>
+      아티스트 "수화" 앨범활동 (작사,작곡,편곡)<br>
+      가수 이루 '잊으려고' 가이드 녹음<br>
+      가수 가호 "Lost Way" 코러스 녹음<br>
+      가수 소찬휘 콘서트 코러스 세션<br>
+      우바울 "Some Way, 소망, 출애굽기17장, 요한복음21장, 시편27편" 작사/작곡<br>
+      한월 "마음의 없는소리" 작곡<br>
+      2013 제1회 한양대학교 college of applied music festival 금상 수상<br>
+      前 써니뮤직 레이블 작곡가 & 아티스트<br>
+      前 HIPPO MUSIC 레이블 대표 및 소속 아티스트<br><br>
+      <strong>- 입시 -</strong><br>
+      Vocal + Singer-Songwriter + K-POP 합격생 배출<br>
+      동아방송예술대학, 호원대학교, 경희대학교, 명지전문대, 백석예술대학,<br>
+      정화예술대학교, 여주대학, 국제예술대학교, 경기대, 단국대 등 상위권 수석 포함 합격생 다수 배출<br><br>
+      <strong>- 오디션 -</strong><br>
+      SM, 큐브 등 다수 연습생 합격<br><br>
+      <strong>- 출강 -</strong><br>
+      (현) 잼 실용음악학원 (현 홍대, 前 사당)<br>
+      (현) 온뮤직 보컬&댄스 실용음악학원 (인천)<br>
+      (현) 수화스튜디오 (새절)<br>
+      (前) 부천경희실용음악학원 (부천)<br>
+      (前) 어웨이크 실용음악학원 (김포)<br>
+      (前) 주니퍼실용음악학원 (광명)<br>
+      (前) 서강실용음악학원 (인천)<br>
+      (前) 퓨즈실용음학원 (한양대)<br>
+      (前) 뮤즈 실용음학원 (대전)<br><br>
+      <strong>- Album -</strong><br>
+      (2018) Digital Single 수화 "그때,너"<br>
+      (2020) Digital Single 수화 "아무것도 아니다", "기록", "의자", "잔상", "비밀"<br>
+      (2021) Digital Single 수화 "빈자리", "사랑 그 아픈 이름",<br>
+      "나지막한 목소리가 귓가에 들려오는 밤이면", "다른 마음", "몰라요", "이제서야", "점"<br>
+      (2023) Digital Single 수화 "대화"
+    </p>
+  </section>  <section id="contact">
+    <h2>문의</h2>
+    <div class="contact-info">
+      주소: 서울시 은평구 376-17<br>
+      전화번호: 010-9971-0414<br>
+      이메일: spelling7@naver.com
     </div>
-  </div>
+    <form>
+      <input type="text" placeholder="이름" required />
+      <input type="email" placeholder="이메일" required />
+      <textarea rows="5" placeholder="문의 내용" required></textarea>
+      <button type="submit">보내기</button>
+    </form>
+  </section>
 </body>
 </html>
