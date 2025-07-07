@@ -1,8 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <head><title>수화스튜디오</title></head>
-  <body>
-    <h1>환영합니다!</h1>
-    <p>수화스튜디오 홈페이지에 오신 걸 환영합니다.</p>
-  </body>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수화스튜디오</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #111;
+    }
+    .contact {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>수화스튜디오</h1>
+    <p>보컬 트레이닝 · 작사작곡 · 음반 제작 전문</p>
+  </header>
+
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#curriculum">커리큘럼</a>
+    <a href="#contact">문의</a>
+  </nav>
+
+  <section id="about">
+    <h2>학원 소개</h2>
+    <p>수화스튜디오는 실력 있는 보컬 트레이너와 프로 작곡가가 함께하는 실전 중심 음악 교육 스튜디오입니다. 초보자부터 데뷔 준비생까지 맞춤형 커리큘럼을 제공합니다.</p>
+  </section>
+
+  <section id="curriculum">
+    <h2>커리큘럼 안내</h2>
+    <ul>
+      <li><strong>보컬 트레이닝:</strong> 발성, 음정, 감정 표현 훈련</li>
+      <li><strong>작사·작곡:</strong> 멜로디 구성, 가사 쓰기, 미디 실습</li>
+      <li><strong>음반 제작:</strong> 녹음, 믹싱, 자켓 제작까지 원스톱 과정</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>문의 및 오시는 길</h2>
+    <div class="contact">
+      <p><strong>이메일:</strong> soohwa.studio@email.com</p>
+      <p><strong>전화:</strong> 010-9971-0414</p>
+      <p><strong>주소:</strong> 서울시 은평구 응암동 376-17</p>
+      <p><strong>운영시간:</strong> 월~토 오전 10시 ~ 오후 8시</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 수화스튜디오. All rights reserved.</p>
+  </footer>
+</body>
 </html>
