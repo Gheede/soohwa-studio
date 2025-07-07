@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="보컬, 작곡, 음반 제작 전문 수화스튜디오 홈페이지">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>수화스튜디오</title>
-  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="보컬, 작곡, 음반 제작 전문 수화스튜디오 홈페이지" />
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * { box-sizing: border-box; }
     body {
@@ -40,7 +40,7 @@
     }
     nav a:hover { color: #ffcc00; }
     .hero {
-      background: url('https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
       height: 50vh;
       display: flex;
       align-items: center;
@@ -87,20 +87,32 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+    .highlight {
+      background: #ffcc00;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      padding: 0.7rem 1.5rem;
+      background: #111;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
     footer {
       background: #111;
       color: #aaa;
       text-align: center;
       padding: 1.5rem;
       font-size: 0.9rem;
-    }
-    a { color: #333; }
-    a:hover { color: #000; }
-    .highlight {
-      background: #ffcc00;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-weight: bold;
     }
   </style>
 </head>
@@ -111,40 +123,51 @@
     <a href="#instructor">강사 소개</a>
     <a href="#albums">음반 커버</a>
     <a href="#videos">음반</a>
-    <a href="#contact">문의하기</a>
-  </nav>
-  <div class="hero">
-    당신의 음악, 지금 시작하세요
-  </div>
-  <div class="container">
+    <a href="#instagram">인스타그램</a>
+    <a href="#apply">수강신청</a>
+    <a href="#contact">문의</a>
+  </nav>  <div class="hero">당신의 음악, 지금 시작하세요</div>  <div class="container">
     <section id="intro">
       <h2>학원 소개</h2>
-      <p><span class="highlight">수화스튜디오</span>는 감성적인 표현력과 실전 중심 실력을 겸비한 아티스트를 양성합니다.<br>
-      보컬 트레이닝부터 작사·작곡, 음반 제작까지 아우르는 통합 커리큘럼을 통해 수강생이 자신의 색깔을 찾아내고, 음악 산업 속에서 당당히 설 수 있도록 지도합니다.</p>
+      <p><span class="highlight">수화스튜디오</span>는 감성 표현력과 실전 중심 실력을 겸비한 아티스트를 양성합니다.<br>보컬 트레이닝부터 작사·작곡, 음반 제작까지 아우르는 통합 커리큘럼으로 수강생이 자신의 색깔을 찾아 음악 산업에서 당당히 설 수 있도록 지도합니다.</p>
     </section><section id="instructor">
   <h2>강사 소개</h2>
-  <img src="https://imgur.com/a/wlxAqxG" alt="강사 사진" class="profile">
+  <img src="https://i.imgur.com/WcNNa52.jpeg" alt="강사 사진" class="profile">
   <p><strong>김윤수 강사</strong></p>
   <ul>
-    <li>동아방송예술대학 실용음악과 졸업 (3년 전문학사)</li>
-    <li>글로벌사이버대학교 방송연예학 학사 졸업</li>
-    <li>경찰대학 국립경찰교향악단 보컬 대원 전역</li>
-    <li>실기교사 교원자격증(음악) 취득</li>
-    <li>입시 및 오디션 합격생 다수 배출</li>
-    <li>現 수화스튜디오 외 다수 학원 출강</li>
+
+  <li>동아방송예술대학 실용음악과 졸업</li>
+  <li>글로벌사이버대학교 방송연예학 학사</li>
+  <li>국립경찰교향악단 보컬 대원 전역</li>
+  <li>실기교사 교원자격증(음악) 취득</li>
+  <li>KOICA, 세종문화회관 등 다수 공연</li>
+  <li>수많은 음반 작업 및 아티스트 협업</li>
+  <li>現 수화스튜디오 (새절)</li>
+  <li>現 잼 실용음악학원 (홍대)</li>
+  <li>現 온뮤직 보컬&댄스 실용음악학원 (인천)</li>
+  <li>前 부천경희실용음악학원</li>
+  <li>前 어웨이크 실용음악학원 (김포)</li>
+  <li>前 주니퍼실용음악학원 (광명)</li>
+  <li>前 서강실용음악학원 (인천)</li>
+  <li>前 퓨즈실용음악학원 (한양대)</li>
+  <li>前 뮤즈실용음악학원 (대전)</li>
+  <li>앨범 활동:</li>
+  <ul>
+    <li>2018: Digital Single 수화 "그때, 너"</li>
+    <li>2020: "아무것도 아니다", "기록", "의자", "잔상", "비밀"</li>
+    <li>2021: "빈자리", "사랑 그 아픈 이름", "나지막한 목소리가 귓가에 들려오는 밤이면", "다른 마음", "몰라요", "이제서야", "점"</li>
+    <li>2023: "대화"</li>
   </ul>
+</ul>
+    </section><section id="albums">
+  <h2>음반 커버</h2>
+  <div class="gallery">
+    <img src="https://i.imgur.com/J6R8A7h.jpeg" alt="앨범 커버" />
+  </div>
 </section>
 
-<section id="albums">
-
-  <h2>음반 커버</h2>
-  <p>수화 아티스트의 정식 발매 앨범 커버입니다.</p>
-  <div class="gallery">
-    <img src="https://imgur.com/a/5bcsSYL" alt="수화 앨범 커버" />
-  </div>
-</section><section id="videos">
+<section id="videos">
   <h2>뮤직비디오</h2>
-  <p>공식 유튜브 채널에서 확인할 수 있는 수화의 음악 영상입니다.</p>
   <div class="videos">
     <iframe src="https://www.youtube.com/embed/NNxBZ3d9L0I" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/bTnLgxrASrw" allowfullscreen></iframe>
@@ -162,6 +185,25 @@
   </div>
 </section>
 
+<section id="instagram" style="text-align: center; padding: 50px 20px;">
+  <h2 style="font-size: 28px; font-weight: bold;">인스타그램</h2>
+  <p style="margin-top: 10px; font-size: 16px;">최신 활동은 인스타그램에서 확인해보세요.</p>
+  <a href="https://instagram.com/soohwa_official" target="_blank" 
+     style="display: inline-block; margin-top: 20px; background-color: #000; color: #fff; padding: 12px 24px; border-radius: 30px; text-decoration: none; font-size: 16px;">
+    👉 @soohwa_official 바로가기
+  </a>
+</section>
+
+<section id="apply">
+  <h2>수강 신청</h2>
+  <form action="mailto:spelling7@naver.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="이름" required>
+    <input type="email" name="email" placeholder="이메일" required>
+    <textarea name="message" rows="5" placeholder="수강 목적 또는 문의 내용" required></textarea>
+    <button type="submit">보내기</button>
+  </form>
+</section>
+
 <section id="contact">
   <h2>문의하기</h2>
   <p><strong>주소:</strong> 서울시 은평구 376-17</p>
@@ -169,23 +211,7 @@
   <p><strong>이메일:</strong> <a href="mailto:spelling7@naver.com">spelling7@naver.com</a></p>
 </section>
 
-<section id="instagram">
-
-  <h2>인스타그램</h2>
-  <p>@soohwa_official 의 최신 피드를 확인하세요.</p>
-  <iframe src="https://snapwidget.com/embed/1061561?u=soohwa_official" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; max-width:800px; height:300px; display:block; margin:auto;"></iframe>
-</section><section id="apply">
-  <h2>수강 신청</h2>
-  <form action="mailto:spelling7@naver.com" method="post" enctype="text/plain" style="display:flex; flex-direction:column; gap:1rem; max-width:500px; margin:auto;">
-    <input type="text" name="name" placeholder="이름" required>
-    <input type="email" name="email" placeholder="이메일" required>
-    <textarea name="message" rows="5" placeholder="수강 목적 또는 문의 내용" required></textarea>
-    <button type="submit" style="padding:0.7rem 1.5rem; background:#111; color:#fff; border:none; cursor:pointer;">보내기</button>
-  </form>
-</section>
-
-  </div>
-  <footer>
+  </div>  <footer>
     &copy; 2025 수화스튜디오 | Designed for artists 🎵
   </footer>
 </body>
